@@ -8,7 +8,7 @@ This crate includes the [rp2040-hal], but also configures each pin of the
 RP2040 chip according to how it is connected up on the Thing Plus RP2040.
 
 [Sparkfun Thing Plus RP2040]: https://www.sparkfun.com/products/17745
-[sparkfun-thing-plus-rp2040]: https://github.com/rp-rs/rp-hal/tree/main/boards/sparkfun-thing-plus-rp2040
+[sparkfun-thing-plus-rp2040]: https://github.com/rp-rs/sparkfun-thing-plus-rp2040
 [rp2040-hal]: https://github.com/rp-rs/rp-hal/tree/main/rp2040-hal
 [Raspberry Silicon RP2040]: https://www.raspberrypi.org/products/rp2040/
 
@@ -17,7 +17,7 @@ RP2040 chip according to how it is connected up on the Thing Plus RP2040.
 To use this crate, your `Cargo.toml` file should contain:
 
 ```toml
-sparkfun-thing-plus-rp2040 = "0.1.0"
+sparkfun-thing-plus-rp2040 = "0.2.0"
 ```
 
 In your program, you will need to call `sparkfun_thing_plus_rp2040::Pins::new` to create
@@ -31,7 +31,7 @@ devices. See the [examples](./examples) folder for more details.
 To compile an example, clone the _rp-hal_ repository and run:
 
 ```console
-rp-hal/boards/sparkfun-thing-plus-rp2040 $ cargo build --release --example <name>
+sparkfun-thing-plus-rp2040 $ cargo build --release --example <name>
 ```
 
 You will get an ELF file called
@@ -45,7 +45,7 @@ USB drive exported by the RP2040 bootloader, simply boot your board into
 bootloader mode and run:
 
 ```console
-rp-hal/boards/sparkfun-thing-plus-rp2040 $ cargo run --release --example <name>
+sparkfun-thing-plus-rp2040 $ cargo run --release --example <name>
 ```
 
 If you get an error about not being able to find `elf2uf2-rs`, try:
